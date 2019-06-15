@@ -1,0 +1,17 @@
+<!-- If Statement to color based on current page -->
+<!-- <nav>
+  <a href="/" {% if page.url == "/" %}style="color: red;"{% endif %}> 
+    Home
+  </a>
+  <a href="/about.html" {% if page.url == "/about.html" %}style="color: red;"{% endif %}>
+    About
+  </a>
+</nav> -->
+
+<!-- Using a Yaml file for data and parsing through entries -->
+<!-- Also use SCSS file for styling -->
+<nav>
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</nav>
