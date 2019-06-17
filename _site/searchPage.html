@@ -15,12 +15,12 @@
   <!-- <link rel="stylesheet" type="text/css" href="/assets/prism/prism.css"> -->
 </head>
   <head>
-    <title>Home</title>
+    <title></title>
   </head>
   <body>
 	<!-- If Statement to color based on current page -->
 <!-- <nav>
-  <a href="/" style="color: red;"> 
+  <a href="/" > 
     Home
   </a>
   <a href="/about.html" >
@@ -33,7 +33,7 @@
 <!-- <nav>
   
   <li class = "nav-item">
-    <a class="nav-link" href="/" class="current">Home</a>
+    <a class="nav-link" href="/" >Home</a>
   </li>
   
   <li class = "nav-item">
@@ -45,7 +45,7 @@
   </li>
   
   <li class = "nav-item">
-    <a class="nav-link" href="/searchPage.html" >Search</a>
+    <a class="nav-link" href="/searchPage.html" class="current">Search</a>
   </li>
   
 </nav> -->
@@ -60,7 +60,7 @@
     <ul class="navbar-nav mr-auto">
 	  
 	  <li class = "nav-item">
-	    <a class="nav-link" href="/" style="color:#e9ecef; text-decoration:underline">Home</a>
+	    <a class="nav-link" href="/" >Home</a>
 	  </li>
 	  
 	  <li class = "nav-item">
@@ -72,7 +72,7 @@
 	  </li>
 	  
 	  <li class = "nav-item">
-	    <a class="nav-link" href="/searchPage.html" >Search</a>
+	    <a class="nav-link" href="/searchPage.html" style="color:#e9ecef; text-decoration:underline">Search</a>
 	  </li>
 	  
     </ul>
@@ -83,7 +83,26 @@
     <div id="results-container"></div> -->
   </div>
 </nav>
-    	<h1>hello world!</h1>
+    	<!-- Html Elements for Search -->
+<div class="container" id="search-container">
+	<input type="text" id="search-input" class="form-control mr-sm-2" autocomplete="off" placeholder="search...">
+	<h2> Watcha Lookin for? </h2>
+	<ul id="results-container"></ul>
+</div>
+
+<!-- Script pointing to search-script.js -->
+<script src="/assets/javascript/search.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/assets/json/search.json',
+  searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
+  noResultsText: "No results found",
+})
+</script>
   </body>
   	  <!-- <script type="text/javascript" href="/assets/prism/prism.js"></script> -->
 </html>
