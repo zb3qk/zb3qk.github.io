@@ -1,0 +1,118 @@
+/* About Page (about.md and about.html) */
+.uva {
+	color: white;
+	outline: none;
+}
+
+nav a:hover {
+	outline: 1px solid white;
+}
+a.uva:hover {
+	text-decoration: none;
+	color: white;
+	outline: 1px solid white;
+}
+
+a:hover {
+	outline: 1px solid black;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-style:solid;
+  border-color:white;
+}
+
+/* Blog Posts */
+.topics span {
+	padding: 5px;
+	background-color: #4AA9FF;
+	color: white;
+}
+
+.tags span {
+	margin-top: 10px;
+	padding: 5px;
+	background-color: #03DB74;
+	color: white;
+}
+
+.aboutBar {
+	/*background-color: #2196F3; */
+	padding: 20px; 
+	color: white; 
+	border-radius: 5px;
+}
+
+/* Blog Listing */
+.blogList {
+
+}
+
+.blogPost {
+	padding-top: 5px;
+	background-color: #F5F5F5;
+	margin-left: 5px;
+
+}
+
+/* Background for Jumbotron */
+.jumbotron {
+	padding: 2rem 2rem;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+
+
+/* Animation */
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+/* Written by Manuel Pino (https://codepen.io/P1N2O/pen/pyBNzX) */
+
+.post {
+	font-size: 20px;
+}
+
+.w3 {
+	color: black;
+	background-color: #28cc59;
+}
