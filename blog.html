@@ -6,10 +6,11 @@ title: Blog
 	<h1>Latest Posts</h1>
 </div>
 
-<ul style="list-style-type: none">
+<ul class="row blogList justify-content-center" style="list-style-type: none">
   {% for post in site.posts %}
-    <li class="jumbotron">
+    <li class="col-sm-3 blogPost">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <span class="badge badge-secondary" style="text-align: right;">{{post.date | | date_to_string: "ordinal", "US"  }}</span>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
