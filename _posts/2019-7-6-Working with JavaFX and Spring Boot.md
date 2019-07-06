@@ -3,7 +3,6 @@ layout: post
 topics: ['GUI']
 tags: ['JavaFX', 'Spring Boot']
 ---
-# A quick overview
 
 JavaFX is a graphic library baked directly into Java 8, but since Java 9 it has been removed from Java. To date, the easiest way to 
 make JavaFX applications has been to develop with JDK 8. 
