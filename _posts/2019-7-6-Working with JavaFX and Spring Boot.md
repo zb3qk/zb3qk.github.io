@@ -9,7 +9,7 @@ JavaFX is a graphic library baked directly into Java 8, but since Java 9 it has 
 make JavaFX applications has been to develop with JDK 8. 
 
 How does it work? Here is an example.
-```Java
+```java
 @SpringBootApplication
 public class MyApp extends Application {
     private ConfigurableApplicationContext springContext;
@@ -66,4 +66,5 @@ and takes advantage of its nested structure to organize GUI elements.
 </GridPane>
 
 ```
+
 
