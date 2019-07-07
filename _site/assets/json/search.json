@@ -2,6 +2,26 @@
   
     {
 
+      "title"    : "Working with javafx and spring boot",
+      "url"      : "/2019/07/06/Working-with-JavaFX-and-Spring-Boot.html",
+      "category" : "",
+      "tags"     : "JavaFX, Spring Boot",
+      "date"     : "2019-07-06 00:00:00 -0400"
+
+    } ,
+  
+    {
+
+      "title"    : "Running gluon applications",
+      "url"      : "/2019/06/25/Running-Gluon-Applications.html",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2019-06-25 00:00:00 -0400"
+
+    } ,
+  
+    {
+
       "title"    : "Yakisoba",
       "url"      : "/2019/06/16/Yakisoba.html",
       "category" : "",
