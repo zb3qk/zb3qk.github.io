@@ -110,11 +110,17 @@
 </div>
 
 <div class="container post">
-	<p>JavaFX is a graphic library baked directly into Java 8, but since Java 9 it has been removed from Java. To date, the easiest way to 
+	<ul id="markdown-toc">
+  <li><a href="#javafx" id="markdown-toc-javafx">JavaFX</a></li>
+</ul>
+
+<h1 id="javafx">JavaFX</h1>
+
+<p>JavaFX is a graphic library baked directly into Java 8, but since Java 9 it has been removed from Java. To date, the easiest way to 
 make JavaFX applications has been to develop with JDK 8.</p>
 
 <p>How does it work? Here is an example.</p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@SpringBootApplication</span>
+<div id="file" class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@SpringBootApplication</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyApp</span> <span class="kd">extends</span> <span class="nc">Application</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="nc">ConfigurableApplicationContext</span> <span class="n">springContext</span><span class="o">;</span>
     <span class="kd">private</span> <span class="nc">Parent</span> <span class="n">rootNode</span><span class="o">;</span>
@@ -150,6 +156,11 @@ make JavaFX applications has been to develop with JDK 8.</p>
 
 <span class="o">}</span>
 </code></pre></div></div>
+<style type="text/css">
+    #file::before{
+        content: "MyApp.java";
+    }
+</style>
 
 <p>Using Spring Boot, the production pipeline is greatly simplified so as to start the GUI application on runtime.</p>
 

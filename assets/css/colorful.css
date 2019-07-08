@@ -1,6 +1,13 @@
 .highlight pre { background-color: #272822; }
-pre.highlight{ padding: 10px; border-radius:10px; }
+pre.highlight{ padding: 10px; }
 pre.highlight code {color: white; }
+#file::before {
+	padding: 3px;
+  content: "filename";
+  background-color: #272822;;
+  color: white;
+  font-weight: bold;
+}
 
 .highlight .hll { background-color: #272822; }
 .highlight .c { color: #75715e } /* Comment */
