@@ -1,7 +1,8 @@
 .highlight pre { background-color: #272822; }
 pre.highlight{ padding: 10px; }
 pre.highlight code {color: white; }
-#file::before {
+
+.file::before {
 	padding: 3px;
   content: "filename";
   background-color: #272822;;

@@ -120,7 +120,7 @@
 make JavaFX applications has been to develop with JDK 8.</p>
 
 <p>How does it work? Here is an example.</p>
-<div id="file" class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@SpringBootApplication</span>
+<div class="language-java file highlighter-rouge" id="one"><div class="highlight"><pre class="highlight"><code><span class="nd">@SpringBootApplication</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyApp</span> <span class="kd">extends</span> <span class="nc">Application</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="nc">ConfigurableApplicationContext</span> <span class="n">springContext</span><span class="o">;</span>
     <span class="kd">private</span> <span class="nc">Parent</span> <span class="n">rootNode</span><span class="o">;</span>
@@ -157,7 +157,7 @@ make JavaFX applications has been to develop with JDK 8.</p>
 <span class="o">}</span>
 </code></pre></div></div>
 <style type="text/css">
-    #file::before{
+    #one::before{
         content: "MyApp.java";
     }
 </style>
@@ -167,7 +167,7 @@ make JavaFX applications has been to develop with JDK 8.</p>
 <p>Akin to Web Design, an easy way to design JavaFX Scenes is via <i>.fxml</i> files. FXML is an extension of XML (in the same way of HTML)
 and takes advantage of its nested structure to organize GUI elements.</p>
 
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?import javafx.scene.control.Button?&gt;</span>
+<div class="language-xml file highlighter-rouge" id="two"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?import javafx.scene.control.Button?&gt;</span>
 <span class="cp">&lt;?import javafx.scene.control.Label?&gt;</span>
 <span class="cp">&lt;?import javafx.scene.layout.GridPane?&gt;</span>
 <span class="cp">&lt;?import javafx.scene.control.TableView?&gt;</span>
@@ -180,6 +180,11 @@ and takes advantage of its nested structure to organize GUI elements.</p>
 <span class="nt">&lt;/GridPane&gt;</span>
 
 </code></pre></div></div>
+<style type="text/css">
+    #two::before{
+        content: "/fxml/sample.fxml";
+    }
+</style>
 
 
 </div>

@@ -50,9 +50,9 @@ public class MyApp extends Application {
 
 }
 ```
-{:#file}
+{:.file #one}
 <style type="text/css">
-    #file::before{
+    #one::before{
         content: "MyApp.java";
     }
 </style>
@@ -76,5 +76,11 @@ and takes advantage of its nested structure to organize GUI elements.
 </GridPane>
 
 ```
+{:.file #two}
+<style type="text/css">
+    #two::before{
+        content: "/fxml/sample.fxml";
+    }
+</style>
 
 
