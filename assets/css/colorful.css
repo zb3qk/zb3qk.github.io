@@ -5,7 +5,7 @@ pre.highlight code {color: white; }
 .file::before {
 	padding: 3px;
   content: "filename";
-  background-color: #272822;;
+  background-color: #272822;
   color: white;
   font-weight: bold;
 }
