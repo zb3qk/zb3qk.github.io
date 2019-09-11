@@ -15,7 +15,7 @@ The provider first scans a folder and all of its children to map the contents to
 To allow users protection, the distributor uses OAuth. Every user must create an account before using the service. 
 
 ## Mobile Frontend
-![My helpful screenshot](/assets/images/IMG-4482.JPG)
-![My helpful screenshot](/assets/images/IMG-4483.JPG)
-![My helpful screenshot](/assets/images/IMG-4484.JPG)
-![My helpful screenshot](/assets/images/IMG-4485.JPG)
+![My helpful screenshot](/assets/images/IMG-4482.JPG =x200)
+![My helpful screenshot](/assets/images/IMG-4483.JPG =x200)
+![My helpful screenshot](/assets/images/IMG-4484.JPG =x200)
+![My helpful screenshot](/assets/images/IMG-4485.JPG =x200)
