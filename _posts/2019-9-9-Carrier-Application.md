@@ -8,6 +8,9 @@ Carrier is an application I envisioned to be the crossroads of all other work I 
 
 The stack for this is a Django server powered by various python libraries installed on your computer (what we shall call a provider) connected to our Global Server (what we shall call a distributor). To view the files, one can download a mobile application designed using Ionic JS and its logic written in Angular. 
 
+## How it works
+![My helpful screenshot](/assets/images/path.png)
+
 ## Provider Backend
 The provider first scans a folder and all of its children to map the contents to a mySQL database. Whenever a user requests a file, it must go through this database. 
 
