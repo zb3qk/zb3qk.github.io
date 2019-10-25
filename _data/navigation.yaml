@@ -2,5 +2,7 @@
   link: /
 - name: Blog
   link: /blog.html
+- name: Projects
+  link: /projects.html
 - name: Search
   link: /searchPage.html
