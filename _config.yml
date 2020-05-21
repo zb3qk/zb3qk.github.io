@@ -2,8 +2,12 @@ markdown: kramdown
 highlighter: rouge
 
 collections:
-  gui:
+  # gui:
+  #   output: true
+  projects:
     output: true
+    permalink: /projects/:path/
+  
 
 defaults:
   - scope:
@@ -20,3 +24,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "project"

@@ -3,10 +3,13 @@ layout: default
 title: Blog
 ---
 <div class="jumbotron">
-	<h1>Latest Posts</h1>
+  <h1>Posts</h1>
+  <input type="text" id="search-input" class="form-control mr-sm-2" autocomplete="off" placeholder="search...">
 </div>
 
-<ul class="row blogList justify-content-center" style="list-style-type: none">
+<ul id="results-container" ></ul>
+
+<ul id ='latest' class="row blogList justify-content-center" style="list-style-type: none">
   {% for post in site.posts %}
     <li class="col-sm-3 blogPost">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -15,3 +18,31 @@ title: Blog
     </li>
   {% endfor %}
 </ul>
+
+<!-- Script pointing to search-script.js -->
+<script src="/assets/javascript/search.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+  //  https://zellwk.com/blog/check-empty-input-js/
+const input = document.querySelector('input');
+const latest = document.getElementById('latest');
+input.addEventListener('input', evt => {
+  const value = input.value.trim();
+  if (value) {
+    // input.dataset.state = 'valid'
+    latest.style = "display: none;"
+  } else {
+    latest.style = "display: relative; list-style-type: none;"
+  }
+})
+
+
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/assets/json/search.json',
+  searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
+  noResultsText: "No results found",
+})
+</script>
