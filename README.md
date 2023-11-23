@@ -1,11 +1,16 @@
----
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2023-08-12 22:41:21 +0000
-categories: jekyll update
----
-<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+# 🐸 frog_blog
+
+## Startup
+    
+```bash
+gem install jekyll bundler # Install jekyll dependencies
+chmod u+x ./scripts/* # make scripts executable
+bundle exec jekyll serve # start local server
+```
+
+## Posts
+
+### Example Blog Post
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -31,24 +36,11 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 
+### Diagramming
 
-<div id="myplot"></div>
-
-<script type="module">
-
-const plot = Plot.rectY({length: 10000}, Plot.binX({y: "count"}, {x: Math.random})).plot();
-const div = document.querySelector("#myplot");
-div.append(plot);
-
-</script>
-
-
-<div id="observablehq-1b54d5af"></div>
-<p>Credit: <a href="https://observablehq.com/@observablehq/plot-crosshairx">Plot: CrosshairX by Observable</a></p>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/@observablehq/plot-crosshairx.js?v=3";
-new Runtime().module(define, Inspector.into("#observablehq-1b54d5af"));
-</script>
+#### D3.js
+Include the following script imports on each markdown file which uses D3.js to draw charts
+```html
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+```
