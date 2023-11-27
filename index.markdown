@@ -4,3 +4,11 @@
 
 layout: home
 ---
+
+<div id="multi-bg"> </div>
+
+<style>
+    #multi-bg {
+        background-image: url("");
+    }
+</style>
