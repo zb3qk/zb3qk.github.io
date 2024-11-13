@@ -27,3 +27,5 @@ This is a plug-and-play Jekyll theme which you can use on GitHub Pages without e
 - In-built sitemap
 
 Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
+
+[RSS](https://zb3qk.github.io/feed.xml)
